@@ -24,7 +24,7 @@ def pmodel(noValues=1024, p=0.4999, slope=[]):
         x = fourierCoeff*np.exp(1j*phase)
         x = np.fft.fft(x).real
         x *= stdy/np.std(x)
-        x += meanVal
+        x += meanVal 
     else:
         x = y
     
